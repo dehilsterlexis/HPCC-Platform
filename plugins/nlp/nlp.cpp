@@ -93,7 +93,5 @@ namespace nlp {
         tgtLen = nlpEng->nlpEngAnalyze(ana,txt,sso);
         tgt = (char *) CTXMALLOC(parentCtx, tgtLen);
         memcpy_iflen(tgt, sso.str().c_str(), tgtLen);
-        sso.str("");
-        sso.clear();
     }
 } // namespace nlp
