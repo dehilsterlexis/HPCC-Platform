@@ -43,6 +43,10 @@ NLPEng::~NLPEng() {
         delete nlpEngine;
         nlpEngine = NULL;
     }
+    if (workingFolder[0] != '\0') {
+        delete workingFolder;
+        workingFolder = NULL;
+    }
 }
 
 #include <sstream>
